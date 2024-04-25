@@ -2,14 +2,14 @@ package com.ing.zoo;
 
 import java.util.Random;
 
-public class Pig {
-    public String name;
+public class Pig extends Animal implements Omnivore, Performer {
     public String helloText;
     public String eatText;
     public String trick;
 
-    public Pig()
+    public Pig(String name)
     {
+        super(name);
     }
 
     public void sayHello()
