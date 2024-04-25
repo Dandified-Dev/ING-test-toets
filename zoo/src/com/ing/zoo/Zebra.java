@@ -1,6 +1,12 @@
 package com.ing.zoo;
 
-public class Zebra extends Herbivore {
+import com.ing.zoo.interfaces.Herbivore;
+import com.ing.zoo.interfaces.Performer;
+
+/**
+ * Represents a Zebra
+ */
+public class Zebra extends Animal implements Herbivore, Performer {
     public String helloText;
     public String eatText;
     public String trick;
@@ -20,5 +26,11 @@ public class Zebra extends Herbivore {
     {
         eatText = "munch munch zank yee bra";
         System.out.println(eatText);
+    }
+
+    public void performTrick()
+    {
+        trick = "be pedestrian crossing";
+        System.out.println(trick);
     }
 }

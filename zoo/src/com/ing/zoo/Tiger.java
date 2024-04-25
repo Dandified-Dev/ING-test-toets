@@ -1,8 +1,13 @@
 package com.ing.zoo;
 
+import com.ing.zoo.interfaces.Carnivore;
+
 import java.util.Random;
 
-public class Tiger extends Animal{
+/**
+ * Represents a Tiger
+ */
+public class Tiger extends Animal implements Carnivore {
     public String helloText;
     public String eatText;
     public String trick;

@@ -1,5 +1,9 @@
 package com.ing.zoo;
 
+/**
+ * Represent an animal
+ * base class for all zoo animals
+ */
 public class Animal {
     private String name;
 

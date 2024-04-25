@@ -1,6 +1,11 @@
 package com.ing.zoo;
 
-public class Hippo extends Herbivore {
+import com.ing.zoo.interfaces.Herbivore;
+
+/**
+ * Represents a Hippo
+ */
+public class Hippo extends Animal implements Herbivore {
     public String helloText;
     public String eatText;
 
